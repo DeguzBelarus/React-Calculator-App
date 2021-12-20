@@ -125,14 +125,20 @@ class CalculatorBody extends React.Component {
 
   operatorsFunctionality(event) {
     let operationValue = event.target.innerHTML;
-
-    this.setState({
-      calculatorDisplayValue: "0",
-      firstNumber: Number(this.state.calculatorDisplayValue),
-      logFirstNumber: Number(this.state.calculatorDisplayValue),
-      operation: operationValue,
-      logOperation: operationValue,
-    });
+    if (this.state.firstNumber == "") {
+      this.setState({
+        calculatorDisplayValue: "0",
+        firstNumber: Number(this.state.calculatorDisplayValue),
+        logFirstNumber: Number(this.state.calculatorDisplayValue),
+        operation: operationValue,
+        logOperation: operationValue,
+      });
+    } else if (this.state.firstNumber != "") {
+      this.setState({
+        operation: operationValue,
+        logOperation: operationValue,
+      });
+    }
   }
 
   resultFunctionality() {

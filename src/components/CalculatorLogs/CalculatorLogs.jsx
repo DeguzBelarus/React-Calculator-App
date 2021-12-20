@@ -11,7 +11,7 @@ function CalculatorLogs(props) {
   return (
     <div className="calculator-logs">
       <p className="logs">Logs:</p>
-      <span className="firstnumber">
+      <span className="logs-info">
         {props.logFirstNumber +
           " " +
           props.logOperation +
