@@ -1,5 +1,5 @@
 import React from "react";
-import "./CalculatorOperators.css"
+import "./CalculatorOperators.scss"
 
 class CalculatorOperators extends React.Component {
     render() {

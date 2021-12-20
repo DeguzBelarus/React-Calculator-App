@@ -1,5 +1,5 @@
 import React from "react";
-import "./CalculatorButtons.css";
+import "./CalculatorButtons.scss";
 import CalculatorLogs from "../CalculatorLogs/CalculatorLogs";
 
 class CalculatorButtons extends React.Component {

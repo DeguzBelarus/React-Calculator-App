@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./CalculatorLogs.css";
+import "./CalculatorLogs.scss";
 
 function CalculatorLogs(props) {
   return (
