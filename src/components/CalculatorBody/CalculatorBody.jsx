@@ -86,6 +86,17 @@ class CalculatorBody extends React.Component {
 
       this.reset();
     }
+
+    let display = document.querySelector(".calculator-display");
+    if (display.value.length > 12) {
+      display.style.fontSize = 18 + "px";
+    }
+    if (display.value.length > 23) {
+      display.style.fontSize = 12 + "px";
+    }
+    if (display.value.length > 34) {
+      display.style.fontSize = 8 + "px";
+    }
   }
 
   numbersFunctionality(event) {
