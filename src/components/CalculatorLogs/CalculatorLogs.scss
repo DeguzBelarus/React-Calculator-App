@@ -16,7 +16,8 @@
   .logs {
     margin: 0;
     margin-left: 5px;
-    font-size: 14px;
+    margin-bottom: 5px;
+    font-size: 12px;
     font-weight: bold;
     user-select: none;
   }
@@ -24,5 +25,15 @@
   .logs-info {
     margin-left: 5px;
     font-weight: bold;
+    font-size: 14px;
+    user-select: none;
+    color: yellowgreen;
+  }
+
+  .result-text {
+    margin-left: 5px;
+    font-weight: bolder;
+    font-size: 18px;
+    color: blue;
   }
 }

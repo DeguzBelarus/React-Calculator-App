@@ -18,9 +18,9 @@ function CalculatorLogs(props) {
           " " +
           props.logSecondNumber +
           " " +
-          equally +
-          props.result}
+          equally}
       </span>
+      <span className="result-text">{props.result}</span>
     </div>
   );
 }
