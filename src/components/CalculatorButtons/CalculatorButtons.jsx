@@ -19,7 +19,12 @@ class CalculatorButtons extends React.Component {
         <div className="number eight" onClick={this.props.numbersFunctionality}>8</div>
         <div className="number nine" onClick={this.props.numbersFunctionality}>9</div>
         <div className="zero" onClick={this.props.numbersFunctionality}>0</div>
-        <CalculatorLogs />
+        <div className="dot" onClick={this.props.numbersFunctionality}>.</div>
+        <CalculatorLogs
+        logFirstNumber={this.props.logFirstNumber}
+        logOperation={this.props.logOperation}
+        logSecondNumber={this.props.logSecondNumber}
+        result={this.props.result} />
       </div>
     );
   }

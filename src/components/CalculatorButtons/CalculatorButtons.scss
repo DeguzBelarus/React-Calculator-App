@@ -1,61 +1,81 @@
 .calculator-buttons {
-    width: 102%;
-    height: 100%;
-    display: flex;
-    margin-top: 10px;
-    justify-content: center;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    border: 1px solid black;
-    border-radius: 10px;
+  width: 102%;
+  height: 100%;
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
 .number {
-    width: 33.3%;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    border: 1px solid black;
-    user-select: none;
-    font-size: 25px;
-    font-weight: bold;
-    transition: 0.8s;
-    background: whitesmoke;
+  width: 33.3%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid black;
+  user-select: none;
+  font-size: 25px;
+  font-weight: bold;
+  transition: 0.8s;
+  background: whitesmoke;
 }
 
 .one {
-    border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
 }
 
 .three {
-    border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .zero {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    border: 1px solid black;
-    border-bottom: 2px solid black;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    user-select: none;
-    font-size: 25px;
-    font-weight: bold;
-    transition: 0.8s;
-    background: whitesmoke;
+  width: 66.6%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-bottom: 2px solid black;
+  border-bottom-left-radius: 8px;
+  user-select: none;
+  font-size: 25px;
+  font-weight: bold;
+  transition: 0.8s;
+  background: whitesmoke;
+}
+
+.dot {
+  width: 33.3%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-bottom: 2px solid black;
+  border-bottom-right-radius: 8px;
+  user-select: none;
+  font-size: 25px;
+  font-weight: bold;
+  transition: 0.8s;
+  background: whitesmoke;
+
+  &:hover {
+    background: #827717;
+  }
 }
 
 .number:hover {
-    background: #827717;
+  background: #827717;
 }
 
 .zero:hover {
-    background: #827717;
+  background: #827717;
 }

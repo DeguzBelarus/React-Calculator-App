@@ -1,17 +1,21 @@
 import React from "react";
-import "./CalculatorOperators.scss"
+import "./CalculatorOperators.scss";
 
 class CalculatorOperators extends React.Component {
-    render() {
-        return(
-            <div className="calculator-operantors">
-                <div className="operator plus">+</div>
-                <div className="operator">-</div>
-                <div className="operator">/</div>
-                <div className="operator multiply">*</div>
-            </div>
-        )
-    }
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div className="calculator-operantors">
+        <div className="operator plus" onClick={this.props.operatorsFunctionality}>+</div>
+        <div className="operator" onClick={this.props.operatorsFunctionality}>-</div>
+        <div className="operator" onClick={this.props.operatorsFunctionality}>/</div>
+        <div className="operator multiply" onClick={this.props.operatorsFunctionality}>*</div>
+      </div>
+    );
+  }
 }
 
 export default CalculatorOperators;

@@ -11,7 +11,9 @@ class CalculatorAddButtons extends React.Component {
         <div className="clear" onClick={this.props.cleringFunctionality}>
           C
         </div>
-        <div className="result">=</div>
+        <div className="result" onClick={this.props.resultFunctionality}>
+          =
+        </div>
       </div>
     );
   }

@@ -12,10 +12,14 @@
     border: 1px solid black;
     border-top: 2px solid black;
     border-radius: 8px;
-}
 
-.logs {
-    margin: 0;
-    margin-left: 5px;
-    font-weight: bold;
+    .logs {
+        margin: 0;
+        margin-left: 5px;
+        font-weight: bold;
+    }
+
+    .firstnumber {
+        margin-left: 5px;
+    }
 }
