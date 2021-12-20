@@ -24,6 +24,10 @@
   font-weight: bold;
   transition: 0.8s;
   background: whitesmoke;
+
+  &:hover {
+    background: #827717;
+  }
 }
 
 .one {
@@ -49,6 +53,10 @@
   font-weight: bold;
   transition: 0.8s;
   background: whitesmoke;
+
+  &:hover {
+    background: #827717;
+  }
 }
 
 .dot {
@@ -70,12 +78,4 @@
   &:hover {
     background: #827717;
   }
-}
-
-.number:hover {
-  background: #827717;
-}
-
-.zero:hover {
-  background: #827717;
 }
