@@ -1,0 +1,38 @@
+.calculator-body {
+    width: 300px;
+    height: 560px;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: #cfd8dc;
+    box-shadow: 2px 4px 8px 3px black;
+}
+
+.calculator-display {
+    width: 97%;
+    height: 100px;
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: end;
+    border-radius: 10px;
+    font-family: "Heir of light";
+    font-size: 34px;
+    font-weight: bold;
+    user-select: none;
+    transition: 0.1s;
+}
+
+.calculator-display:focus {
+    outline: none;
+}
+
+.calculator-display:hover {
+    cursor: default;
+}

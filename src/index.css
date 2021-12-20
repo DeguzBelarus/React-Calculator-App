@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Heir of light";
+  src: url(./fonts/HeirofLightRegular.ttf), url(./fonts/HeirofLightBold.ttf);
+  font-weight: normal, bold;
+}
+
+* {
+  font-family: "Heir of light";
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #03a9f4 ;
+}
+
+#root {
+  max-width: 1080px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

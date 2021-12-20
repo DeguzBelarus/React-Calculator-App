@@ -1,0 +1,38 @@
+.calculator-operantors {
+    width: 102%;
+    margin-top: 9px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.operator {
+    width: 25%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background: #bcaaa4  ;
+    font-size: 22px;
+    font-weight: bold;
+    user-select: none;
+    transition: 0.8s;
+}
+
+.plus {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.multiply {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.operator:hover {
+    background: #ff6d00 ;
+}
