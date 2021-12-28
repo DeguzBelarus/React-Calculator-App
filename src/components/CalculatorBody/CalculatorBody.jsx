@@ -102,6 +102,10 @@ class CalculatorBody extends React.Component {
   numbersFunctionality(event) {
     let value = event.target.innerHTML;
 
+    if (this.state.calculatorDisplayValue.includes(".") && value == ".") {
+      return;
+    }
+
     if (this.state.calculatorDisplayValue === "0") {
       if (value == ".") {
         this.setState({
