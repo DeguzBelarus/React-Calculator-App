@@ -19,6 +19,8 @@
   align-items: center;
   box-sizing: border-box;
   border: 1px solid black;
+  -ms-user-select: none;
+  -webkit-user-select: none;
   user-select: none;
   font-size: 25px;
   font-weight: bold;
@@ -48,6 +50,8 @@
   border: 1px solid black;
   border-bottom: 2px solid black;
   border-bottom-left-radius: 8px;
+  -ms-user-select: none;
+  -webkit-user-select: none;
   user-select: none;
   font-size: 25px;
   font-weight: bold;
@@ -69,6 +73,8 @@
   border: 1px solid black;
   border-bottom: 2px solid black;
   border-bottom-right-radius: 8px;
+  -ms-user-select: none;
+  -webkit-user-select: none;
   user-select: none;
   font-size: 25px;
   font-weight: bold;

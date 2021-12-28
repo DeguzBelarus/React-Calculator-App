@@ -19,6 +19,8 @@
     border: 1px solid black;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
+    -ms-user-select: none;
+    -webkit-user-select: none;
     user-select: none;
     background: #ff1744;
     font-size: 22px;
@@ -37,6 +39,8 @@
     border: 1px solid black;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
+    -ms-user-select: none;
+    -webkit-user-select: none;
     user-select: none;
     background: #ffff00;
     font-size: 42px;

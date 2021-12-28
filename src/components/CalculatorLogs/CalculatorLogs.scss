@@ -19,6 +19,8 @@
     margin-bottom: 5px;
     font-size: 12px;
     font-weight: bold;
+    -ms-user-select: none;
+    -webkit-user-select: none;
     user-select: none;
   }
 
@@ -26,6 +28,8 @@
     margin-left: 5px;
     font-weight: bold;
     font-size: 14px;
+    -ms-user-select: none;
+    -webkit-user-select: none;
     user-select: none;
     color: yellowgreen;
   }

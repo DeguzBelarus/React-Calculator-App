@@ -19,6 +19,8 @@
   background: #3e2723;
   font-size: 22px;
   font-weight: bold;
+  -ms-user-select: none;
+  -webkit-user-select: none;
   user-select: none;
   color: whitesmoke;
   transition: 0.8s;

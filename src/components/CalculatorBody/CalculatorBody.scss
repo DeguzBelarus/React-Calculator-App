@@ -25,6 +25,8 @@
     font-family: "Heir of light";
     font-size: 34px;
     font-weight: bold;
+    -ms-user-select: none;
+    -webkit-user-select: none;
     user-select: none;
     background: black;
     color: whitesmoke;
