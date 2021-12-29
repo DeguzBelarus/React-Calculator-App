@@ -243,13 +243,14 @@ class CalculatorBody extends React.Component {
   }
 
   operatorsFunctionality(event) {
-    if (this.state.result != "") {
+    if (this.state.result !== "") {
       this.setState({
         logSecondNumber: "",
       });
     }
 
     let operationValue = event.target.innerHTML;
+
     if (this.state.firstNumber == "") {
       this.setState({
         calculatorDisplayValue: "0",
@@ -267,7 +268,7 @@ class CalculatorBody extends React.Component {
   }
 
   resultFunctionality() {
-    if (this.state.firstNumber == "") return;
+    if (this.state.firstNumber === "") return;
     this.setState({
       calculatorDisplayValue: "0",
       secondNumber: Number(this.state.calculatorDisplayValue),
