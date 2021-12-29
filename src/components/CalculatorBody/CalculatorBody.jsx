@@ -35,31 +35,73 @@ class CalculatorBody extends React.Component {
 
   componentDidUpdate() {
     if (this.state.secondNumber != "" && this.state.operation == "+") {
-      this.setState({
-        result: this.state.firstNumber + this.state.secondNumber,
-        calculatorDisplayValue:
-          this.state.firstNumber + this.state.secondNumber,
-      });
+      let result = (
+        this.state.firstNumber + this.state.secondNumber
+      ).toString();
+
+      if (
+        (result.includes(".") && result.includes("00000000000000")) ||
+        (result.includes(".") && result.includes("99999999999999"))
+      ) {
+        result = Number(result);
+        this.setState({
+          result: result.toFixed(1),
+          calculatorDisplayValue: Number(result).toFixed(1),
+        });
+      } else
+        this.setState({
+          result: this.state.firstNumber + this.state.secondNumber,
+          calculatorDisplayValue:
+            this.state.firstNumber + this.state.secondNumber,
+        });
 
       this.reset();
     }
 
     if (this.state.secondNumber != "" && this.state.operation == "-") {
-      this.setState({
-        result: this.state.firstNumber - this.state.secondNumber,
-        calculatorDisplayValue:
-          this.state.firstNumber - this.state.secondNumber,
-      });
+      let result = (
+        this.state.firstNumber - this.state.secondNumber
+      ).toString();
+
+      if (
+        (result.includes(".") && result.includes("00000000000000")) ||
+        (result.includes(".") && result.includes("99999999999999"))
+      ) {
+        result = Number(result);
+        this.setState({
+          result: result.toFixed(1),
+          calculatorDisplayValue: Number(result).toFixed(1),
+        });
+      } else
+        this.setState({
+          result: this.state.firstNumber - this.state.secondNumber,
+          calculatorDisplayValue:
+            this.state.firstNumber - this.state.secondNumber,
+        });
 
       this.reset();
     }
 
     if (this.state.secondNumber != "" && this.state.operation == "*") {
-      this.setState({
-        result: this.state.firstNumber * this.state.secondNumber,
-        calculatorDisplayValue:
-          this.state.firstNumber * this.state.secondNumber,
-      });
+      let result = (
+        this.state.firstNumber * this.state.secondNumber
+      ).toString();
+
+      if (
+        (result.includes(".") && result.includes("00000000000000")) ||
+        (result.includes(".") && result.includes("99999999999999"))
+      ) {
+        result = Number(result);
+        this.setState({
+          result: result.toFixed(1),
+          calculatorDisplayValue: Number(result).toFixed(1),
+        });
+      } else
+        this.setState({
+          result: this.state.firstNumber * this.state.secondNumber,
+          calculatorDisplayValue:
+            this.state.firstNumber * this.state.secondNumber,
+        });
 
       this.reset();
     }
@@ -78,11 +120,25 @@ class CalculatorBody extends React.Component {
       this.state.operation == "/" &&
       this.state.secondNumber != 0
     ) {
-      this.setState({
-        result: this.state.firstNumber / this.state.secondNumber,
-        calculatorDisplayValue:
-          this.state.firstNumber / this.state.secondNumber,
-      });
+      let result = (
+        this.state.firstNumber / this.state.secondNumber
+      ).toString();
+
+      if (
+        (result.includes(".") && result.includes("00000000000000")) ||
+        (result.includes(".") && result.includes("99999999999999"))
+      ) {
+        result = Number(result);
+        this.setState({
+          result: result.toFixed(1),
+          calculatorDisplayValue: Number(result).toFixed(1),
+        });
+      } else
+        this.setState({
+          result: this.state.firstNumber / this.state.secondNumber,
+          calculatorDisplayValue:
+            this.state.firstNumber / this.state.secondNumber,
+        });
 
       this.reset();
     }
