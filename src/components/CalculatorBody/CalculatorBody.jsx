@@ -193,6 +193,18 @@ class CalculatorBody extends React.Component {
 
   numbersFunctionality(event) {
     let value = event.target.innerHTML;
+    let element = event.target;
+
+    const classAdd = () => {
+      element.classList.add("click");
+
+      const classRemove = () => {
+        element.classList.remove("click");
+      };
+
+      setTimeout(classRemove, 115);
+    };
+    classAdd();
 
     if (this.state.calculatorDisplayValue.includes(".") && value == ".") {
       return;

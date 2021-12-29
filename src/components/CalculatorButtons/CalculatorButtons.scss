@@ -85,3 +85,24 @@
     background: #827717;
   }
 }
+
+.click {
+  animation-name: number-click;
+  animation-duration: 0.115s;
+  animation-timing-function: linear;
+}
+
+@keyframes number-click {
+  0% {
+    box-shadow: inset 1px 1px 0 0 white;
+    background: #827717;
+  }
+  50% {
+    box-shadow: inset 1px 1px 30px 0 yellow;
+    background: goldenrod;
+  }
+  100% {
+    box-shadow: inset 1px 1px 0 0 white;
+    background: #827717;
+  }
+}
