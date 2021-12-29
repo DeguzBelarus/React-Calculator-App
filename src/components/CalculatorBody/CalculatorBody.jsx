@@ -48,6 +48,15 @@ class CalculatorBody extends React.Component {
           result: result.toFixed(1),
           calculatorDisplayValue: Number(result).toFixed(1),
         });
+      } else if (
+        (result.includes(".") && result.includes("000000000000")) ||
+        (result.includes(".") && result.includes("999999999999"))
+      ) {
+        result = Number(result);
+        this.setState({
+          result: result.toFixed(2),
+          calculatorDisplayValue: Number(result).toFixed(2),
+        });
       } else
         this.setState({
           result: this.state.firstNumber + this.state.secondNumber,
@@ -72,6 +81,15 @@ class CalculatorBody extends React.Component {
           result: result.toFixed(1),
           calculatorDisplayValue: Number(result).toFixed(1),
         });
+      } else if (
+        (result.includes(".") && result.includes("000000000000")) ||
+        (result.includes(".") && result.includes("999999999999"))
+      ) {
+        result = Number(result);
+        this.setState({
+          result: result.toFixed(2),
+          calculatorDisplayValue: Number(result).toFixed(2),
+        });
       } else
         this.setState({
           result: this.state.firstNumber - this.state.secondNumber,
@@ -95,6 +113,15 @@ class CalculatorBody extends React.Component {
         this.setState({
           result: result.toFixed(1),
           calculatorDisplayValue: Number(result).toFixed(1),
+        });
+      } else if (
+        (result.includes(".") && result.includes("000000000000")) ||
+        (result.includes(".") && result.includes("999999999999"))
+      ) {
+        result = Number(result);
+        this.setState({
+          result: result.toFixed(2),
+          calculatorDisplayValue: Number(result).toFixed(2),
         });
       } else
         this.setState({
@@ -132,6 +159,15 @@ class CalculatorBody extends React.Component {
         this.setState({
           result: result.toFixed(1),
           calculatorDisplayValue: Number(result).toFixed(1),
+        });
+      } else if (
+        (result.includes(".") && result.includes("000000000000")) ||
+        (result.includes(".") && result.includes("999999999999"))
+      ) {
+        result = Number(result);
+        this.setState({
+          result: result.toFixed(2),
+          calculatorDisplayValue: Number(result).toFixed(2),
         });
       } else
         this.setState({
