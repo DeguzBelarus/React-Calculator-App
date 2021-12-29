@@ -49,8 +49,8 @@ class CalculatorBody extends React.Component {
           calculatorDisplayValue: Number(result).toFixed(1),
         });
       } else if (
-        (result.includes(".") && result.includes("000000000000")) ||
-        (result.includes(".") && result.includes("999999999999"))
+        (result.includes(".") && result.includes("00000000000")) ||
+        (result.includes(".") && result.includes("99999999999"))
       ) {
         result = Number(result);
         this.setState({
@@ -82,8 +82,8 @@ class CalculatorBody extends React.Component {
           calculatorDisplayValue: Number(result).toFixed(1),
         });
       } else if (
-        (result.includes(".") && result.includes("000000000000")) ||
-        (result.includes(".") && result.includes("999999999999"))
+        (result.includes(".") && result.includes("00000000000")) ||
+        (result.includes(".") && result.includes("99999999999"))
       ) {
         result = Number(result);
         this.setState({
@@ -115,8 +115,8 @@ class CalculatorBody extends React.Component {
           calculatorDisplayValue: Number(result).toFixed(1),
         });
       } else if (
-        (result.includes(".") && result.includes("000000000000")) ||
-        (result.includes(".") && result.includes("999999999999"))
+        (result.includes(".") && result.includes("00000000000")) ||
+        (result.includes(".") && result.includes("99999999999"))
       ) {
         result = Number(result);
         this.setState({
@@ -161,8 +161,8 @@ class CalculatorBody extends React.Component {
           calculatorDisplayValue: Number(result).toFixed(1),
         });
       } else if (
-        (result.includes(".") && result.includes("000000000000")) ||
-        (result.includes(".") && result.includes("999999999999"))
+        (result.includes(".") && result.includes("00000000000")) ||
+        (result.includes(".") && result.includes("99999999999"))
       ) {
         result = Number(result);
         this.setState({
