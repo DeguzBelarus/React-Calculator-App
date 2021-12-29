@@ -267,6 +267,7 @@ class CalculatorBody extends React.Component {
   }
 
   resultFunctionality() {
+    if (this.state.firstNumber == "") return;
     this.setState({
       calculatorDisplayValue: "0",
       secondNumber: Number(this.state.calculatorDisplayValue),
