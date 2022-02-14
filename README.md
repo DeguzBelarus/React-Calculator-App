@@ -1,1 +1,1 @@
-Demo: https://calculator-deguz-app.herokuapp.com/
+Demo: https://deguz-calculator.herokuapp.com/
